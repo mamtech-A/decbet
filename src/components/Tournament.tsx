@@ -32,7 +32,7 @@ function Tournament() {
         {data.map((item: any) => (
       <div key={item.id}>
         <img
-            src={`../assets/Tournamentpng/${item.title}.png`}
+            src={`decbet/src/assets/Tournamentpng/${item.title}.png`}
             alt={item.title}
             style={{ width: '50px', height: '50px' }} ></img>       
         <a>{item.title}</a>
