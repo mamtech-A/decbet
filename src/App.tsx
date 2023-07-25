@@ -11,13 +11,13 @@ function App() {
     <div className="App">
       <nav>
         <div className="menu">
-          <Link to="/">leagues</Link>
-          <Link to="/matches">matches</Link>
+          <Link to="/decbet">leagues</Link>
+          <Link to="/decbet/matches">matches</Link>
         </div>
       </nav>
       <Routes>
-        <Route path="/" Component={Leagues} />
-        <Route path="/matches" Component={Matches} />
+        <Route path="/decbet" Component={Leagues} />
+        <Route path="/decbet/matches" Component={Matches} />
       </Routes>
     </div>
     </main>
