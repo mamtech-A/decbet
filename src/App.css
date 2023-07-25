@@ -1,10 +1,9 @@
 #root {
-  max-width: 1280px;
-  margin: 0;
+  margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-/* 
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -33,18 +32,6 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
-.App {
-  text-align: center;
-}
-
 .App nav {
   display: flex;
   justify-content: space-between;
@@ -58,19 +45,4 @@
   text-decoration: none;
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.Converter {
-  text-align: left;
-  margin: 1rem 4rem;
-}
-
-.Converter label {
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.Converter input {
-  display: block;
-  margin-top: 0.5rem;
 }

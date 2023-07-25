@@ -9,6 +9,7 @@ function App() {
   return (
     <main>
     <div className="App">
+      <div className='Container'>
       <nav>
         <div className="menu">
           <Link to="/decbet">leagues</Link>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/decbet" Component={Leagues} />
         <Route path="/decbet/matches" Component={Matches} />
       </Routes>
+      </div>
     </div>
     </main>
   )
