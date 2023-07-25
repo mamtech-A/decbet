@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-function Leagues() {
+function Tournament() {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
@@ -28,14 +28,18 @@ function Leagues() {
       if (!data) {
         return <div>No data available</div>;
       }
-    return <div className="">
+    return <div className="Tournament">
         {data.map((item: any) => (
       <div key={item.id}>
+        <img
+            src={`decbet/src/assets/Tournamentpng/${item.title}.png`}
+            alt={item.title}
+            style={{ width: '50px', height: '50px' }} ></img>       
         <a>{item.title}</a>
-        <br></br>
+          <br></br>
       </div>
     ))}
     </div>
 }
 
-export default Leagues;
+export default Tournament;
