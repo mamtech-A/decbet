@@ -49,3 +49,11 @@
 .Tournament{
   padding:0 20px;
 }
+.TournamentItem{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+.TournamentItem img{
+  height: 50px;
+  margin: auto;
+}

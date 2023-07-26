@@ -30,15 +30,14 @@ function Tournament() {
       }
     return <div className="Tournament">
         {data.map((item: any) => (
-      <div key={item.id}>
-        <img
+      <div className='TournamentItem' key={item.id}>
+        <img className='TournamentImg'
             src={`./Tournamentpng/${item.title}.png`}
-            alt={item.title}
-            style={{ width: '100px', height: '100px' }} ></img>       
+            alt={item.title}></img>       
         <a>{item.title}</a>
-          <br></br>
       </div>
     ))}
+    <br></br>
     </div>
 }
 
