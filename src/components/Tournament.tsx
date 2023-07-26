@@ -38,6 +38,7 @@ function Tournament() {
       </div>
     ))}
     <br></br>
+    <hr></hr>
     </div>
 }
 
