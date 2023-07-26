@@ -34,7 +34,7 @@ function Tournament() {
         <img
             src={`./Tournamentpng/${item.title}.png`}
             alt={item.title}
-            style={{ width: '50px', height: '50px' }} ></img>       
+            style={{ width: '100px', height: '100px' }} ></img>       
         <a>{item.title}</a>
           <br></br>
       </div>
