@@ -51,7 +51,7 @@
 }
 .TournamentItem{
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr ;
 }
 .TournamentItem img{
   height: 50px;
