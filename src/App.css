@@ -54,7 +54,7 @@
   grid-template-columns:1fr 1fr ;
 }
 .TournamentItem img{
-  height: 50px; 
+  height: 70px; 
   margin:auto;
   padding-right: 50px;
 }
