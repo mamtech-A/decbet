@@ -54,9 +54,6 @@ function Matches() {
             bookmaker.markets?.map((market: any) =>
               market.outcomes?.map((outcome: any) => (
                   <p>{outcome.price}</p>
-                // <li key={outcome.name}>
-                //   {outcome.name}: {outcome.price}
-                // </li>
               ))
             )
           )}
