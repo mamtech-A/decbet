@@ -34,7 +34,7 @@ function Tournament() {
         {data.map((item: any) => (
       <div className='TournamentItem' key={item.id}>
         <img className='TournamentImg'
-            src={`./Tournamentpng/${item.title}.png`}
+            src={`.${import.meta.env.BASE_URL}/Tournamentpng/${item.title}.png`}
             alt={item.title}></img>       
         <a className='TournamentTitle'> <Link to={`/decbet/matches/${item.key}`}>{item.title}</Link></a>
         <br/>
