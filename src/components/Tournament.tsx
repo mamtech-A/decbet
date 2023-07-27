@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 
 function Tournament() {
     const [data, setData] = useState<any>(null);
@@ -34,7 +36,7 @@ function Tournament() {
         <img className='TournamentImg'
             src={`./Tournamentpng/${item.title}.png`}
             alt={item.title}></img>       
-        <a className='TournamentTitle'>{item.title}</a>
+        <a className='TournamentTitle'> <Link to={`/decbet/matches/${item.key}`}>{item.title}</Link></a>
         <br/>
 
       </div>

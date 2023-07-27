@@ -17,7 +17,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/decbet" Component={Tournament} />
-        <Route path="/decbet/matches" Component={Matches} />
+        <Route path="/decbet/matches/:leagueKey" Component={Matches} />
       </Routes>
       </div>
     </div>

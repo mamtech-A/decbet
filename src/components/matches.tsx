@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
+
 
 function Matches() {
+    const { leagueKey } = useParams<{ leagueKey: string }>();
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
@@ -9,7 +12,7 @@ function Matches() {
       // Function to fetch data from the API
       const fetchData = async () => {
         try {
-          const response = await axios.get('https://api.the-odds-api.com/v4/sports/soccer_spain_la_liga/odds/?regions=eu&markets=h2h&apiKey=5b526bbdc29c7ffc0e5470d5182f85f8&bookmakers=onexbet'); // Replace with your API endpoint
+          const response = await axios.get(`https://api.the-odds-api.com/v4/sports/${leagueKey}/odds/?regions=eu&markets=h2h&apiKey=5b526bbdc29c7ffc0e5470d5182f85f8&bookmakers=onexbet`); // Replace with your API endpoint
           setData(response.data);
           setLoading(false);
         } catch (error) {
