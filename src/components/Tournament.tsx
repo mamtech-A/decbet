@@ -35,10 +35,10 @@ function Tournament() {
             src={`./Tournamentpng/${item.title}.png`}
             alt={item.title}></img>       
         <a>{item.title}</a>
+        <br/>
+
       </div>
     ))}
-    <br></br>
-    <hr></hr>
     </div>
 }
 
