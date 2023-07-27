@@ -34,7 +34,7 @@ function Tournament() {
         <img className='TournamentImg'
             src={`./Tournamentpng/${item.title}.png`}
             alt={item.title}></img>       
-        <a>{item.title}</a>
+        <a className='TournamentTitle'>{item.title}</a>
         <br/>
 
       </div>
