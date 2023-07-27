@@ -35,26 +35,32 @@ function Matches() {
     return <div>
     {data.map((item: any) => (
       <div key={item.id}>
-      <img className='TeamImg'
+        <div className='TeamsLogo'>
+            <img className='TeamImg'
             src={`../${leagueKey}/${item.home_team}.png`}
-            alt={item.home_team}></img>    
-        <a>{item.home_team}</a>
-        <span> vs </span>
-        <img className='TeamImg'
+            alt={item.home_team}></img>
+            <p className='matchTime'>{item.commence_time}</p>
+            <img className='TeamImg'
             src={`../${leagueKey}/${item.away_team}.png`}
             alt={item.away_team}></img> 
+        </div>
+        <div className='TeamsName'>
+        <a>{item.home_team}</a>
+        <span> vs </span>
         <a>{item.away_team}</a>
-        <ul>
+        </div>
+        <div className='TeamsOdds'>
           {item.bookmakers?.map((bookmaker: any) =>
             bookmaker.markets?.map((market: any) =>
               market.outcomes?.map((outcome: any) => (
-                <li key={outcome.name}>
-                  {outcome.name}: {outcome.price}
-                </li>
+                  <p>{outcome.price}</p>
+                // <li key={outcome.name}>
+                //   {outcome.name}: {outcome.price}
+                // </li>
               ))
             )
           )}
-        </ul>
+        </div>
         <br></br>
       </div>
     ))}

@@ -63,4 +63,20 @@
 }
 .TeamImg{
   max-width: 50px;
+  margin: auto;
+}
+.TeamsLogo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.matchTime{
+  margin: auto;
+}
+.TeamsName{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.TeamsOdds{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
