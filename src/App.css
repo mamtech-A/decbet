@@ -61,3 +61,6 @@
 .TournamentItem .TournamentTitle{
   padding-right: 50px;
 }
+.TeamImg{
+  max-width: 50px;
+}

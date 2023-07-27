@@ -35,8 +35,14 @@ function Matches() {
     return <div>
     {data.map((item: any) => (
       <div key={item.id}>
+      <img className='TeamImg'
+            src={`../${leagueKey}/${item.home_team}.png`}
+            alt={item.home_team}></img>    
         <a>{item.home_team}</a>
         <span> vs </span>
+        <img className='TeamImg'
+            src={`../${leagueKey}/${item.away_team}.png`}
+            alt={item.away_team}></img> 
         <a>{item.away_team}</a>
         <ul>
           {item.bookmakers?.map((bookmaker: any) =>
