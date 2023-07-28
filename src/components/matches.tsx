@@ -12,7 +12,7 @@ function Matches() {
       // Function to fetch data from the API
       const fetchData = async () => {
         try {
-          const response = await axios.get(`https://api.the-odds-api.com/v4/sports/${leagueKey}/odds/?regions=eu&markets=h2h&apiKey=5b526bbdc29c7ffc0e5470d5182f85f8&bookmakers=onexbet`); // Replace with your API endpoint
+          const response = await axios.get(`https://api.the-odds-api.com/v4/sports/${leagueKey}/odds/?regions=eu&markets=h2h&apiKey=5eda489e445dbcc8db4ff15f552f583e&bookmakers=onexbet`); // Replace with your API endpoint
           setData(response.data);
           setLoading(false);
         } catch (error) {

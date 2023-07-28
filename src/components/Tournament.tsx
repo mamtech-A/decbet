@@ -11,7 +11,7 @@ function Tournament() {
       // Function to fetch data from the API
       const fetchData = async () => {
         try {
-          const response = await axios.get('https://api.the-odds-api.com/v4/sports/?apiKey=5b526bbdc29c7ffc0e5470d5182f85f8'); // Replace with your API endpoint
+          const response = await axios.get('https://api.the-odds-api.com/v4/sports/?apiKey=5eda489e445dbcc8db4ff15f552f583e'); // Replace with your API endpoint
           setData(response.data.filter((item: any) =>item.group ==='Soccer'));
           setLoading(false);
         } catch (error) {
